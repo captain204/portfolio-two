@@ -1,8 +1,9 @@
 from django.urls import path
 
-from .views import HomePageView
+from .views import HomePageView,CreateContactView
 
 
-urlpatteerns=[
-    path('', HomePageView.as_view(),name='home')
+urlpatterns=[
+    path('', HomePageView.as_view(),name='home'),
+    path('contact/', CreateContactView.as_view(), name='home'),
 ]
